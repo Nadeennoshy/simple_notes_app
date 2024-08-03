@@ -10,9 +10,13 @@ class SimpleNotesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        fontFamily: 'Poppins'
+      ),
       debugShowCheckedModeBanner: false,
-      home: NotesView(),
+      home: const NotesView(),
     );
   }
 }
