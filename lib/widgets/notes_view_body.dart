@@ -12,7 +12,7 @@ class NotesViewBody extends StatelessWidget {
       child: Column(
         children: [
           CustomAppBar(title: 'Notes', icon: Icons.search, onPressed: (){}),
-          NoteItem(),
+          const NoteItem(),
         ],
       ),
     );

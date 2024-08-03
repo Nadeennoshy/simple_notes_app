@@ -13,27 +13,27 @@ class NoteItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(20.0),
       ),
       child: Padding(
-        padding: EdgeInsets.only(left: 20,right: 20,top: 16,bottom: 16),
+        padding: const EdgeInsets.only(left: 20,right: 20,top: 16,bottom: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
               contentPadding: EdgeInsets.zero,
-              title: Text('Flutter tips',
+              title: const Text('Flutter tips',
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.black,
               ),
               ),
               subtitle: Padding(
-                padding: EdgeInsets.symmetric(vertical: 16),
+                padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Text('Build your career with nadeen mohamed',
                 style: TextStyle(
                   color: Colors.black.withOpacity(0.5),
                   fontSize: 16.0,
                 ),),
               ),
-              trailing: IconButton(onPressed: (){},icon: Icon(Icons.delete_rounded,color: Colors.black,size: 40,)),
+              trailing: IconButton(onPressed: (){},icon: const Icon(Icons.delete_rounded,color: Colors.black,size: 40,)),
               
             ),
             Padding(
