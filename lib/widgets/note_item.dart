@@ -7,7 +7,6 @@ class NoteItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: 190,
       decoration: BoxDecoration(
         color: Colors.lightBlue,
         borderRadius: BorderRadius.circular(20.0),
