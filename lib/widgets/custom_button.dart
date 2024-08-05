@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:simple_notes_app/constants.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
+  const CustomButton({super.key,required this.onPressed});
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +16,7 @@ class CustomButton extends StatelessWidget {
     ),
         // shape: 
       ),
-      onPressed: (){
-
-      }, 
+      onPressed: onPressed,
       child: const Text('Add',
       style: TextStyle(
         color: Colors.black,
