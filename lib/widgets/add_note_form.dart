@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:simple_notes_app/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:simple_notes_app/models/note_model.dart';
