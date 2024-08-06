@@ -19,7 +19,7 @@ class NoteItem extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
-          color: Colors.lightBlue,
+          color: Color(note.color),
           borderRadius: BorderRadius.circular(20.0),
         ),
         child: Padding(
