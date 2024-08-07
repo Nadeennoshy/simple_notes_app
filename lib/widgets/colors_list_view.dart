@@ -16,27 +16,26 @@ class _ColorsListViewState extends State<ColorsListView> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 36*2,
+      height: 36 * 2,
       child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: kColors.length,
-        itemBuilder: (context,index){
-          return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: GestureDetector(
-              onTap: (){
-                currentIndex = index;
-                BlocProvider.of<AddNoteCubit>(context).color = kColors[index];
+          scrollDirection: Axis.horizontal,
+          itemCount: kColors.length,
+          itemBuilder: (context, index) {
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: GestureDetector(
+                  onTap: () {
+                    currentIndex = index;
+                    BlocProvider.of<AddNoteCubit>(context).color =
+                        kColors[index];
 
-                setState(() {
-                  
-                });
-              },
-              child: ColorItem(
-                isActive: currentIndex==index?true:false,
-                backgroundColor: kColors[index])),
-          );
-        }),
+                    setState(() {});
+                  },
+                  child: ColorItem(
+                      isActive: currentIndex == index ? true : false,
+                      backgroundColor: kColors[index])),
+            );
+          }),
     );
   }
 }

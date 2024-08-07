@@ -13,23 +13,26 @@ class NotesViewBody extends StatefulWidget {
 }
 
 class _NotesViewBodyState extends State<NotesViewBody> {
-  @override 
-  void initState(){
+  @override
+  void initState() {
     super.initState();
     BlocProvider.of<NotesCubit>(context).fetchAllNotes();
-
   }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 16,top: 40,right: 16.0),
+      padding: const EdgeInsets.only(left: 16, top: 40, right: 16.0),
       child: Column(
         children: [
-          CustomAppBar(title: 'Notes', icon: Icons.search, onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context){
-              return const SearchView();
-            }));
-          }),
+          CustomAppBar(
+              title: 'Notes',
+              icon: Icons.search,
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const SearchView();
+                }));
+              }),
           const Expanded(child: NotesListview()),
         ],
       ),

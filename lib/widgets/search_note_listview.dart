@@ -4,7 +4,6 @@ import 'package:simple_notes_app/cubits/notes_cubit/notes_cubit.dart';
 import 'package:simple_notes_app/models/note_model.dart';
 import 'package:simple_notes_app/widgets/note_item.dart';
 
-
 class SearchNotesListView extends StatelessWidget {
   const SearchNotesListView({super.key});
 
